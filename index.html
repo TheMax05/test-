@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Café Artesano: doce clásicos para disfrutar sin prisa en Calle 5 No. 13 - 177."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;600;700;800&family=Italianno&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/tabler-icons.min.css"
+    />
+    <title>Café Artesano | Menú de la casa</title>
+    <script type="module" crossorigin src="./assets/main.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/styles.css">
+  </head>
+  <body>
+    <div class="site-shell" id="top">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand-link" href="#menu" aria-label="Café Artesano, ir al menú">
+            <img
+              class="brand-logo"
+              src="./assets/cafe-artesano-logo.png"
+              alt="Café Artesano"
+              width="108"
+              height="48"
+            />
+          </a>
+          <p class="header-hours">Todos los días <span aria-hidden="true">·</span> 8am–8pm</p>
+
+          <nav class="desktop-nav" aria-label="Navegación principal">
+            <a href="#menu">Menú</a>
+            <a href="#visit">Visítanos</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+
+          <details class="mobile-menu">
+            <summary>Menú</summary>
+            <div class="mobile-menu__panel">
+              <a href="#menu">Menú</a>
+              <a href="#visit">Visítanos</a>
+              <a href="#contacto">Contacto</a>
+            </div>
+          </details>
+        </div>
+      </header>
+
+      <main>
+        <section class="menu-section" id="menu" aria-labelledby="page-title">
+          <div class="container menu-layout">
+            <aside class="menu-intro">
+              <p class="eyebrow">Menú</p>
+              <div class="title-row">
+                <h1 class="vintage-title page-title" id="page-title">Doce clásicos de la casa</h1>
+                <span class="rosette" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <p class="script-subtitle">Preparados para disfrutar sin prisa</p>
+
+              <dl class="business-details">
+                <div>
+                  <dt>Dirección</dt>
+                  <dd>Calle 5 No. 13 - 177</dd>
+                </div>
+                <div>
+                  <dt>Horario</dt>
+                  <dd>Todos los días <span aria-hidden="true">·</span> 8am–8pm</dd>
+                </div>
+              </dl>
+            </aside>
+
+            <div class="menu-catalog">
+              <section class="product-group" aria-labelledby="coffees-title">
+                <div class="category-rule">
+                  <span class="category-number">01</span>
+                  <h2 class="vintage-title category-title" id="coffees-title">Cafés</h2>
+                  <span class="rosette rosette--small" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+
+                <div class="product-grid">
+                  <article class="product-card" data-product="Espresso">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/30597790/pexels-photo-30597790.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Espresso en taza artesanal — Raymond Petrik on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Espresso</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Espresso</h3>
+                      <p class="product-summary">Concentrado, aromático y con un final ligeramente caramelizado.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $7.000">$7.000</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card" data-product="Americano">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/28504480/pexels-photo-28504480.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Americano en taza sobre mesa de madera — Raymond Petrik on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Americano</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Americano</h3>
+                      <p class="product-summary">Espresso alargado con agua caliente; intenso pero más ligero.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $8.000">$8.000</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card" data-product="Cappuccino">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/30052601/pexels-photo-30052601.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Cappuccino con espuma natural — Alexander gomez on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Cappuccino</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Cappuccino</h3>
+                      <p class="product-summary">Espresso, leche vaporizada y una capa generosa de espuma.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $11.000">$11.000</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card" data-product="Latte">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/34487852/pexels-photo-34487852.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Latte con espuma natural en taza — Dany Ortiz on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Latte</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Latte</h3>
+                      <p class="product-summary">Café suave con abundante leche vaporizada y espuma fina.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $12.000">$12.000</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card" data-product="Mocha">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/35289709/pexels-photo-35289709.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Mocha de chocolate en taza oscura — Sergio Arreola on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Mocha</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Mocha</h3>
+                      <p class="product-summary">Espresso, chocolate y leche caliente en una mezcla cremosa.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $13.000">$13.000</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card" data-product="Chocolate caliente">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/5377541/pexels-photo-5377541.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Chocolate caliente servido en taza — Nataliya Vaitkevich on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Chocolate caliente</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Chocolate caliente</h3>
+                      <p class="product-summary">Chocolate y leche caliente con textura espesa y reconfortante.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $11.000">$11.000</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="product-group" aria-labelledby="other-drinks-title">
+                <div class="category-rule">
+                  <span class="category-number">02</span>
+                  <h2 class="vintage-title category-title" id="other-drinks-title">Otras bebidas</h2>
+                  <span class="rosette rosette--small" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+
+                <div class="product-grid">
+                  <article class="product-card" data-product="Té">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/33074048/pexels-photo-33074048.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Té caliente en taza de cerámica — Iulian Sandu on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Té</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Té</h3>
+                      <p class="product-summary">Infusión aromática servida caliente.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $8.000">$8.000</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card" data-product="Frappé">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/37486068/pexels-photo-37486068.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Frappé de café frío sobre barra — azra melek on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Frappé</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Frappé</h3>
+                      <p class="product-summary">Café frío licuado con leche y hielo.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $15.000">$15.000</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="product-group" aria-labelledby="accompaniments-title">
+                <div class="category-rule">
+                  <span class="category-number">03</span>
+                  <h2 class="vintage-title category-title" id="accompaniments-title">Para acompañar</h2>
+                  <span class="rosette rosette--small" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+
+                <div class="product-grid">
+                  <article class="product-card" data-product="Croissant">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/37643626/pexels-photo-37643626.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Croissant dorado servido en plato — zeynep on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Croissant</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Croissant</h3>
+                      <p class="product-summary">Hojaldre dorado, ligero y de sabor mantequilloso.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $8.000">$8.000</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card" data-product="Torta">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/37719220/pexels-photo-37719220.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Porción de torta sobre plato — Nati on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Torta</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Torta</h3>
+                      <p class="product-summary">Porción de torta de la casa, húmeda y suave.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $10.000">$10.000</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card" data-product="Cheesecake">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/33130816/pexels-photo-33130816.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Cheesecake de vainilla sobre plato — Iulian Sandu on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Cheesecake</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Cheesecake</h3>
+                      <p class="product-summary">Relleno cremoso sobre una base crujiente de galleta.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $12.000">$12.000</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card" data-product="Sándwich">
+                    <div class="product-photo" data-image-frame>
+                      <img
+                        src="https://images.pexels.com/photos/30380526/pexels-photo-30380526.jpeg?auto=compress&cs=tinysrgb&w=720&q=80"
+                        alt="Sándwich tostado servido en plato — Cemrecan Yurtman on Pexels"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-coffee" aria-hidden="true"></i>
+                        <span>Sándwich</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Sándwich</h3>
+                      <p class="product-summary">Pan tostado con jamón y queso fundido.</p>
+                      <div class="product-actions">
+                        <span class="price-tag" aria-label="Precio $16.000">$16.000</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section class="visit-section" id="visit" aria-labelledby="visit-title">
+          <div class="container visit-grid">
+            <h2 class="vintage-title visit-title" id="visit-title">Visítanos</h2>
+            <address class="visit-item">
+              <span class="visit-label">Dirección</span>
+              <span class="visit-value">Calle 5 No. 13 - 177</span>
+            </address>
+            <div class="visit-item">
+              <span class="visit-label">Horario</span>
+              <span class="visit-value">Todos los días <span aria-hidden="true">·</span> 8am–8pm</span>
+            </div>
+            <div class="visit-item" id="contacto">
+              <span class="visit-label">Contacto</span>
+              <a class="contact-link" href="tel:3205657444">3205657444 <span aria-hidden="true">·</span> Llamar</a>
+              <a class="contact-link" href="mailto:dianamejiaf97@gmail.com">dianamejiaf97@gmail.com <span aria-hidden="true">·</span> Enviar correo</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p class="footer-name">Café Artesano</p>
+          <div class="footer-links">
+            <a href="tel:3205657444">3205657444</a>
+            <a href="mailto:dianamejiaf97@gmail.com">dianamejiaf97@gmail.com</a>
+          </div>
+        </div>
+      </footer>
+
+      <div
+        class="dialog-backdrop"
+        id="product-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title"
+        aria-describedby="dialog-summary"
+        hidden
+      >
+        <div class="dialog-panel" role="document">
+          <div class="dialog-photo" data-dialog-photo>
+            <img id="dialog-image" src="" alt="" width="720" height="540" loading="lazy" decoding="async" />
+            <span class="image-fallback" data-dialog-fallback hidden>
+              <i class="ti ti-coffee" aria-hidden="true"></i>
+              <span data-dialog-fallback-name></span>
+            </span>
+          </div>
+          <div class="dialog-copy">
+            <button class="dialog-close" id="dialog-close" type="button" aria-label="Cerrar detalle del producto">
+              Cerrar
+            </button>
+            <p class="dialog-category" id="dialog-category"></p>
+            <div class="dialog-heading">
+              <h2 class="vintage-title dialog-title" id="dialog-title"></h2>
+              <span class="price-tag dialog-price" id="dialog-price"></span>
+            </div>
+            <p class="dialog-summary" id="dialog-summary"></p>
+            <dl class="dialog-details">
+              <div>
+                <dt>Ingredientes</dt>
+                <dd id="dialog-ingredients"></dd>
+              </div>
+              <div>
+                <dt>Preparación</dt>
+                <dd id="dialog-preparation"></dd>
+              </div>
+              <div>
+                <dt>Sabor y textura</dt>
+                <dd id="dialog-taste"></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
