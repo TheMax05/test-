@@ -1,0 +1,25 @@
+:root {
+  --product-zoom-scale: 1.06;
+  --motion-product-zoom: 360ms;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .product-photo img {
+    transform-origin: center;
+    transition: transform var(--motion-product-zoom) cubic-bezier(0.2, 0.65, 0.3, 1);
+  }
+
+  .product-card:hover .product-photo img {
+    transform: scale(var(--product-zoom-scale));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-photo img {
+    transition: none;
+  }
+
+  .product-card:hover .product-photo img {
+    transform: none;
+  }
+}
