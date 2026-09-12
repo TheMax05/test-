@@ -42,7 +42,11 @@
       "created": "2026-08-31T16:13:31.210983+00:00",
       "modified": "2026-08-31T16:13:31.210983+00:00",
       "id": "var_5a631a3b956f",
+<<<<<<< HEAD
       "viewportScrollY": 0
+=======
+      "viewportScrollY": 1182
+>>>>>>> 546adc96740aa86779a47e0a0cd6329f2a7874ad
     },
     "var_3d8f4595dfba": {
       "type": "variant",
@@ -60,7 +64,11 @@
       "created": "2026-08-31T16:13:31.222916+00:00",
       "modified": "2026-08-31T16:13:31.222916+00:00",
       "id": "var_3d8f4595dfba",
+<<<<<<< HEAD
       "viewportScrollY": 0
+=======
+      "viewportScrollY": 2919
+>>>>>>> 546adc96740aa86779a47e0a0cd6329f2a7874ad
     },
     "var_b49513bb5862": {
       "type": "variant",
@@ -78,7 +86,11 @@
       "created": "2026-08-31T16:13:31.230103+00:00",
       "modified": "2026-08-31T16:13:31.230103+00:00",
       "id": "var_b49513bb5862",
+<<<<<<< HEAD
       "viewportScrollY": 0
+=======
+      "viewportScrollY": 1780
+>>>>>>> 546adc96740aa86779a47e0a0cd6329f2a7874ad
     }
   },
   "comments": [],
