@@ -1,0 +1,1066 @@
+<!--configuración de la web-->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Café Artesano: café, bebidas, malteadas, postres y productos de la casa en Calle 5 No. 13 - 177."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;600;700;800&family=Italianno&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/tabler-icons.min.css"
+    />
+    <title>Café Artesano | Menú de la casa</title>
+    <script type="module" crossorigin src="./assets/main.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/product-hover.css" />
+  </head>
+  <body>
+    <div class="site-shell" id="top">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand-link" href="#menu" aria-label="Café Artesano, ir al menú">
+            <img
+              class="brand-logo"
+              src="./assets/img/cafe-artesano-logo.png"
+              alt="Café Artesano"
+              width="108"
+              height="48"
+            />
+          </a>
+          <p class="header-hours">Todos los días <span aria-hidden="true">·</span> 8am–6pm</p>
+
+          <nav class="desktop-nav" aria-label="Navegación principal">
+            <a href="#menu">Menú</a>
+            <a href="#visit">Visítanos</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+
+          <details class="mobile-menu">
+            <summary>Menú</summary>
+            <div class="mobile-menu__panel">
+              <a href="#menu">Menú</a>
+              <a href="#visit">Visítanos</a>
+              <a href="#contacto">Contacto</a>
+            </div>
+          </details>
+        </div>
+      </header>
+
+      <main>
+        <section class="menu-section" id="menu" aria-labelledby="page-title">
+          <div class="container menu-layout">
+            <aside class="menu-intro">
+              <p class="eyebrow">Menú</p>
+              <div class="title-row">
+                <h1 class="vintage-title page-title" id="page-title">Los clásicos de la casa</h1>
+                <span class="rosette" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <p class="script-subtitle">Preparados para disfrutar sin prisa</p>
+
+              <dl class="business-details">
+                <div>
+                  <dt>Dirección</dt>
+                  <dd>Calle 5 No. 13 - 177</dd>
+                </div>
+                <div>
+                  <dt>Horario</dt>
+                  <dd>Todos los días <span aria-hidden="true">·</span> 8am–6pm</dd>
+                </div>
+              </dl>
+            </aside>
+
+            <div class="menu-catalog">
+              <!-- Categoría 01: Café -->
+              <section class="product-group" aria-labelledby="cafe-title">
+                <div class="category-rule">
+                  <span class="category-number">01</span>
+                  <h2 class="vintage-title category-title" id="cafe-title">Café</h2>
+                  <span class="rosette rosette--small" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+
+                <div class="product-grid">
+                  <article
+                    class="product-card"
+                    data-open-product="cafe-fuerte-molido"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Café fuerte molido"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="cafe-fuerte-molido">
+                      <img
+                        src="./assets/img/cafe_1.jpg"
+                        alt="Café fuerte molido"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Café fuerte molido</h3>
+                      <p class="product-summary">Café molido de cuerpo intenso, aroma profundo y amargor equilibrado.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Libra: $38.000; Media libra: $20.000; Un cuarto de libra: $12.000">
+                          <span class="price-option">
+                            <span class="price-option__label">Libra</span>
+                            <span class="price-tag" aria-label="Libra $38.000">$38.000</span>
+                          </span>
+                          <span class="price-option">
+                            <span class="price-option__label">Media libra</span>
+                            <span class="price-tag" aria-label="Media libra $20.000">$20.000</span>
+                          </span>
+                          <span class="price-option">
+                            <span class="price-option__label">Un cuarto</span>
+                            <span class="price-tag" aria-label="Un cuarto de libra $12.000">$12.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="cafe-suave-molido"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Café suave molido"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="cafe-suave-molido">
+                      <img
+                        src="./assets/img/cafe_2.png"
+                        alt="Café suave molido"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Café suave molido</h3>
+                      <p class="product-summary">Café molido de perfil suave y aromático, con delicadas notas frutales y maduras.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Libra: $38.000; Media libra: $20.000; Un cuarto de libra: $12.000">
+                          <span class="price-option">
+                            <span class="price-option__label">Libra</span>
+                            <span class="price-tag" aria-label="Libra $38.000">$38.000</span>
+                          </span>
+                          <span class="price-option">
+                            <span class="price-option__label">Media libra</span>
+                            <span class="price-tag" aria-label="Media libra $20.000">$20.000</span>
+                          </span>
+                          <span class="price-option">
+                            <span class="price-option__label">Un cuarto</span>
+                            <span class="price-tag" aria-label="Un cuarto de libra $12.000">$12.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="cafe-en-grano-fuerte-suave"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Café en grano fuerte y suave"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="cafe-en-grano-fuerte-suave">
+                      <img
+                        src="./assets/img/cafe_3.jpg"
+                        alt="Café en grano fuerte y suave"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Café en grano fuerte y suave</h3>
+                      <p class="product-summary">Café en grano disponible en tostado fuerte o suave, para elegir el carácter de cada taza.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Libra: $38.000; Media libra: $20.000">
+                          <span class="price-option">
+                            <span class="price-option__label">Libra</span>
+                            <span class="price-tag" aria-label="Libra $38.000">$38.000</span>
+                          </span>
+                          <span class="price-option">
+                            <span class="price-option__label">Media libra</span>
+                            <span class="price-tag" aria-label="Media libra $20.000">$20.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="cafe-organico"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Café orgánico"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="cafe-organico">
+                      <img src="./assets/img/cafe_4.jpg" alt="Café orgánico" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Café orgánico</h3>
+                      <p class="product-summary">Café 100% sin procesos químicos ni sustancias artificiales, de perfil limpio y natural.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Libra: $55.000; Media libra: $30.000">
+                          <span class="price-option">
+                            <span class="price-option__label">Libra</span>
+                            <span class="price-tag" aria-label="Libra $55.000">$55.000</span>
+                          </span>
+                          <span class="price-option">
+                            <span class="price-option__label">Media libra</span>
+                            <span class="price-tag" aria-label="Media libra $30.000">$30.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <!-- Categoría 02: Helado -->
+              <section class="product-group" aria-labelledby="helado-title">
+                <div class="category-rule">
+                  <span class="category-number">02</span>
+                  <h2 class="vintage-title category-title" id="helado-title">Helado</h2>
+                  <span class="rosette rosette--small" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+
+                <div class="product-grid">
+                  <article
+                    class="product-card"
+                    data-open-product="malteada-normal"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Malteada normal"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="malteada-normal">
+                      <img
+                        src="./assets/img/malteadas/malteada_normal.jpg"
+                        alt="Malteada normal"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Malteada normal</h3>
+                      <p class="product-summary">Helado de vainilla, café, leche condensada, leche y hielo en una mezcla cremosa.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $12.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $12.000">$12.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="malteada-fresa"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Malteada de fresa"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="malteada-fresa">
+                      <img
+                        src="./assets/img/malteadas/malteada_fresa.jpg"
+                        alt="Malteada de fresa"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Malteada de fresa</h3>
+                      <p class="product-summary">Helado de fresa, fresas, leche condensada, leche y hielo en una mezcla fresca y cremosa.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $12.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $12.000">$12.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="malteada-vainilla"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Malteada de vainilla"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="malteada-vainilla">
+                      <img
+                        src="./assets/img/malteadas/malteada_vanilla.jpg"
+                        alt="Malteada de vainilla"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Malteada de vainilla</h3>
+                      <p class="product-summary">Helado de vainilla, leche, leche condensada y hielo, suave y refrescante.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $12.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $12.000">$12.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="malteada-chocolate"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Malteada de chocolate"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="malteada-chocolate">
+                      <img
+                        src="./assets/img/malteadas/malteada_chocolate.jpg"
+                        alt="Malteada de chocolate"
+                        width="720"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span class="image-fallback" data-fallback hidden>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Malteada de chocolate</h3>
+                      <p class="product-summary">Helado de vainilla, chocolate, leche condensada, leche y hielo con sabor intenso y cremoso.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $12.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $12.000">$12.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <!-- Categoría 03: Aperitivos -->
+              <section class="product-group" aria-labelledby="aperitivos-title">
+                <div class="category-rule">
+                  <span class="category-number">03</span>
+                  <h2 class="vintage-title category-title" id="aperitivos-title">Aperitivos</h2>
+                  <span class="rosette rosette--small" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+                <div class="product-grid">
+                  <article
+                    class="product-card"
+                    data-open-product="vino-cafe"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Vino de café"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="vino-cafe">
+                      <img src="assets\img\vino de-cafe.jpg" alt="Vino de café" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Vino de café</h3>
+                      <p class="product-summary">Aperitivo artesanal de café, con aroma profundo y un carácter cálido para disfrutar lentamente.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $30.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $30.000">$30.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="vino-ciruela"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Vino de ciruela"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="vino-ciruela">
+                      <img src="assets\img/vino_ciruela.jpg" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Vino de ciruela</h3>
+                      <p class="product-summary">Aperitivo artesanal de ciruela, frutal, suave y con un dulzor equilibrado.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $25.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $25.000">$25.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="vino-fresa"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Vino de fresa"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="vino-fresa">
+                      <img src="./assets/img/vino_fresa.jpg" alt="Vino de fresa" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Vino de fresa</h3>
+                      <p class="product-summary">Aperitivo artesanal de fresa, fresco, frutal y delicadamente dulce.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $25.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $25.000">$25.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="vino-flor-jamaica"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Vino de flor de Jamaica"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="vino-flor-jamaica">
+                      <img src="./assets/img/vino_jamaica.jpg" alt="Vino de flor de Jamaica" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Vino de flor de Jamaica</h3>
+                      <p class="product-summary">Aperitivo artesanal de flor de Jamaica, aromático, floral y de color intenso.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $25.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $25.000">$25.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="vino-coroso"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Vino de coroso"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="vino-coroso">
+                      <img src="./assets/img/vino_coroso.jpg" alt="Vino de coroso" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Vino de coroso</h3>
+                      <p class="product-summary">Aperitivo artesanal de coroso, frutal, aromático y de sabor particular.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $25.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $25.000">$25.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <!-- Categoría 04: Bebidas -->
+              <section class="product-group" aria-labelledby="bebidas-title">
+                <div class="category-rule">
+                  <span class="category-number">04</span>
+                  <h2 class="vintage-title category-title" id="bebidas-title">Bebidas</h2>
+                  <span class="rosette rosette--small" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+
+                <div class="product-grid">
+                  <article
+                    class="product-card"
+                    data-open-product="capuchino"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Capuchino"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="capuchino">
+                      <img src="./assets/img/bebidas_cafe/capuchino.jpg" alt="Capuchino" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Capuchino</h3>
+                      <p class="product-summary">Leche cremosa y café, terminado con vainilla o arequipe y un toque de canela.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $6.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $6.000">$6.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="espresso"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Espresso"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="espresso">
+                      <img src="./assets/img/bebidas_cafe/espreso.jpg" alt="Espresso" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Espresso</h3>
+                      <p class="product-summary">Café preparado en máquina, disponible corto o largo, con aroma concentrado.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $3.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $3.000">$3.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="tinto"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Tinto"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="tinto">
+                      <img src="./assets/img/bebidas_cafe/tinto.jpg" alt="Tinto" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Tinto</h3>
+                      <p class="product-summary">Café americano servido caliente, sencillo, aromático y reconfortante.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $2.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $2.000">$2.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="frappe"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Frappé"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="frappe">
+                      <!-- Imagen manual: <img src="./assets/products/frappe.jpg" alt="Frappé" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Frappé</h3>
+                      <p class="product-summary">Nevado de café con leche, hielo, leche condensada, crema chantillí y vainilla.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $12.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $12.000">$12.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="mocachino"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Mocachino"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="mocachino">
+                      <!-- Imagen manual: <img src="./assets/products/mocachino.jpg" alt="Mocachino" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Mocachino</h3>
+                      <p class="product-summary">Leche, café y chocolate en una combinación cremosa y equilibrada.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $7.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $7.000">$7.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="chocolate"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Chocolate"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="chocolate">
+                      <!-- Imagen manual: <img src="./assets/products/chocolate.jpg" alt="Chocolate" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Chocolate</h3>
+                      <p class="product-summary">Chocolate artesanal con leche y un toque opcional de vainilla o canela.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $6.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $6.000">$6.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="jugos-naturales"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Jugos naturales de frutas"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="jugos-naturales">
+                      <!-- Imagen manual: <img src="./assets/products/jugos-naturales.jpg" alt="Jugos naturales de frutas" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Jugos naturales de frutas</h3>
+                      <p class="product-summary">Jugos naturales de fruta, preparados con leche o sin leche.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Con leche: $8.000; Sin leche: $6.000">
+                          <span class="price-option">
+                            <span class="price-option__label">Con leche</span>
+                            <span class="price-tag" aria-label="Con leche $8.000">$8.000</span>
+                          </span>
+                          <span class="price-option">
+                            <span class="price-option__label">Sin leche</span>
+                            <span class="price-tag" aria-label="Sin leche $6.000">$6.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="yogur-artesanal"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Yogur artesanal con frutas"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="yogur-artesanal">
+                      <img src="./assets/img/bebidas_cafe/yogures.jpg" alt="Yogur artesanal con frutas" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Yogur artesanal con frutas</h3>
+                      <p class="product-summary">Yogur artesanal elaborado con leche entera pasteurizada, disponible en frutas y opciones naturales.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Litro: $14.000; 280 ml: $5.000">
+                          <span class="price-option">
+                            <span class="price-option__label">Litro</span>
+                            <span class="price-tag" aria-label="Litro $14.000">$14.000</span>
+                          </span>
+                          <span class="price-option">
+                            <span class="price-option__label">280 ml</span>
+                            <span class="price-tag" aria-label="280 ml $5.000">$5.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <!-- Categoría 05: Postres. Incluye la sección de dulces indicada. -->
+              <section class="product-group" aria-labelledby="postres-title">
+                <div class="category-rule">
+                  <span class="category-number">05</span>
+                  <h2 class="vintage-title category-title" id="postres-title">Postres</h2>
+                  <span class="rosette rosette--small" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+
+                <div class="product-grid">
+                  <article
+                    class="product-card"
+                    data-open-product="jalea-real"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Jalea real"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="jalea-real">
+                      <img src="./assets/img/dulces/jalea_real.jpg" alt="Jalea real" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Jalea real</h3>
+                      <p class="product-summary">Jalea real multivitamínica, presentada como producto natural de la casa.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $30.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $30.000">$30.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="miel"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Miel"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="miel">
+                      <img src="./assets/img/dulces/miel.jpg" alt="Miel" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Miel</h3>
+                      <p class="product-summary">Miel de la casa, dulce y aromática, ideal para disfrutar o acompañar.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $15.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $15.000">$15.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="polen"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Polen"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="polen">
+                      <img src="./assets/img/dulces/polen.jpg" alt="Polen" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Polen</h3>
+                      <p class="product-summary">Polen natural, de sabor característico y presentación tradicional.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $20.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $20.000">$20.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="propoleo"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Propóleo"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="propoleo">
+                      <img src="./assets/img/dulces/propoleo.jpg" alt="Propóleo" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Propóleo</h3>
+                      <p class="product-summary">Propóleo de la casa, de sabor intenso y uso tradicional.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $20.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $20.000">$20.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="oblea-basica"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Oblea básica"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="oblea-basica">
+                      <!-- Imagen manual: <img src="./assets/products/oblea-basica.jpg" alt="Oblea básica" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Oblea básica</h3>
+                      <p class="product-summary">Oblea crujiente con arequipe de café.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $3.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $3.000">$3.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="product-card"
+                    data-open-product="oblea-especial"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Ver detalles de Oblea especial"
+                  >
+                    <div class="product-photo" data-image-frame data-image-slot="oblea-especial">
+                      <!-- Imagen manual: <img src="./assets/products/oblea-especial.jpg" alt="Oblea especial" width="720" height="540" loading="lazy" decoding="async" /> -->
+                      <span class="image-fallback" data-fallback>
+                        <i class="ti ti-photo" aria-hidden="true"></i>
+                        <span>Inserta aquí la imagen</span>
+                      </span>
+                    </div>
+                    <div class="product-card__content">
+                      <h3 class="vintage-title product-name">Oblea especial</h3>
+                      <p class="product-summary">Oblea con arequipe de café, mermelada y queso.</p>
+                      <div class="product-actions">
+                        <div class="product-prices" aria-label="Precio $5.000">
+                          <span class="price-option price-option--single">
+                            <span class="price-tag" aria-label="Precio $5.000">$5.000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <!-- Categoría 06: Panadería -->
+              <section class="product-group" aria-labelledby="panaderia-title">
+                <div class="category-rule">
+                  <span class="category-number">06</span>
+                  <h2 class="vintage-title category-title" id="panaderia-title">Panadería</h2>
+                  <span class="rosette rosette--small" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+                <div class="category-empty" role="note">
+                  <p class="category-empty__title">Próximamente</p>
+                  <p class="category-empty__text">Aún no hay productos especificados para esta categoría.</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section class="visit-section" id="visit" aria-labelledby="visit-title">
+          <div class="container visit-grid">
+            <h2 class="vintage-title visit-title" id="visit-title">Visítanos</h2>
+            <address class="visit-item">
+              <span class="visit-label">Dirección</span>
+              <span class="visit-value">Calle 5 No. 13 - 177</span>
+            </address>
+            <div class="visit-item">
+              <span class="visit-label">Horario</span>
+              <span class="visit-value">Todos los días <span aria-hidden="true">·</span> 8am–6pm</span>
+            </div>
+            <div class="visit-item" id="contacto">
+              <span class="visit-label">Contacto</span>
+              <a class="contact-link" href="tel:3205657444">3205657444 <span aria-hidden="true">·</span> Llamar</a>
+              <a class="contact-link" href="mailto:dianamejiaf97@gmail.com">dianamejiaf97@gmail.com <span aria-hidden="true">·</span> Enviar correo</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p class="footer-name">Café Artesano</p>
+          <div class="footer-links">
+            <a href="tel:3205657444">3205657444</a>
+            <a href="mailto:dianamejiaf97@gmail.com">dianamejiaf97@gmail.com</a>
+          </div>
+        </div>
+      </footer>
+
+      <div
+        class="dialog-backdrop"
+        id="product-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title"
+        aria-describedby="dialog-summary"
+        hidden
+      >
+        <div class="dialog-panel" role="document">
+          <div class="dialog-photo" data-dialog-photo>
+            <img id="dialog-image" src="" alt="" width="720" height="540" loading="lazy" decoding="async" hidden />
+            <span class="image-fallback" data-dialog-fallback hidden>
+              <i class="ti ti-photo" aria-hidden="true"></i>
+              <span data-dialog-fallback-name>Imagen pendiente</span>
+            </span>
+          </div>
+          <div class="dialog-copy">
+            <button class="dialog-close" id="dialog-close" type="button" aria-label="Cerrar detalle del producto">
+              Cerrar
+            </button>
+            <p class="dialog-category" id="dialog-category"></p>
+            <div class="dialog-heading">
+              <h2 class="vintage-title dialog-title" id="dialog-title"></h2>
+              <div class="dialog-price-list" id="dialog-price" aria-label="Presentaciones y precios"></div>
+            </div>
+            <p class="dialog-summary" id="dialog-summary"></p>
+            <dl class="dialog-details" id="dialog-details" hidden></dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
