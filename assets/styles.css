@@ -435,14 +435,15 @@ address {
 }
 
 .product-summary {
-  color: var(--color-ink);
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  margin-top: 8px;
-  font-size: 16px;
-  line-height: 1.18;
-  display: -webkit-box;
-  overflow: hidden;
+    color: var(--color-ink);
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.18;
+    display: -webkit-box;
+    overflow: hidden;
 }
 
 .product-actions {
