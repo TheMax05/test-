@@ -1003,11 +1003,7 @@ address {
 }
 
 /* Responsive refinements */
-@media (max-width: 1199px) {
-  .product-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
+@media (min-width: 901px) and (max-width: 1199px) {
   .header-inner {
     gap: 16px;
   }
