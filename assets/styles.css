@@ -1115,6 +1115,12 @@ address {
 
   .dialog-photo {
     height: clamp(180px, 32dvh, 225px);
+    background: var(--color-white);
+  }
+
+  .dialog-photo img {
+    object-fit: contain;
+    object-position: center;
   }
 
   .dialog-copy {
