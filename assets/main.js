@@ -213,15 +213,15 @@ const categories = [
       },
       {
         id: "yogur-artesanal",
-        name: "Yogur artesanal con frutas",
-        summary: "Yogur artesanal elaborado con leche entera pasteurizada, disponible en frutas y opciones naturales.",
+        name: "Yogur artesanal",
+        summary: "Yogur artesanal elaborado con leche entera pasteurizada, disponible en diferentes variedades.",
         prices: [
           { label: "Litro", value: "$14.000" },
           { label: "280 ml", value: "$5.000" },
         ],
         details: [
           { label: "Base", value: "Leche entera de ordeño, pasteurizada." },
-          { label: "Variedades", value: "Fresa, mora, melocotón, natural sin azúcar y natural con azúcar." },
+          { label: "Variedades", value: "Café, Fresa, mora, melocotón, natural sin azúcar y natural con azúcar." },
         ],
       },
     ],
@@ -272,12 +272,97 @@ const categories = [
         prices: [{ value: "$5.000" }],
         details: [{ label: "Ingredientes", value: "Arequipe de café, mermelada y queso." }],
       },
+      {
+        id: "arequipe-dulce-leche",
+        name: "Arequipe y dulce de leche",
+        summary: "Arequipe de café y dulce de leche cortada, con textura suave y un sabor casero profundamente cafetero.",
+        prices: [{ value: "$6.000" }],
+        details: [{ label: "Sabor", value: "Arequipe de café y dulce de leche cortada." }],
+      },
     ],
   },
   {
     id: "panaderia",
     title: "Panadería",
-    products: [],
+    products: [
+      {
+        id: "muffin-cafe-ciruela",
+        name: "Muffin de café y ciruela",
+        summary: "Muffin suave con notas de café y trozos de ciruela, horneado hasta lograr una miga tierna y aromática.",
+        prices: [{ value: "$2.000" }],
+        details: [{ label: "Sabor", value: "Café y ciruela." }],
+      },
+      {
+        id: "almojabanas",
+        name: "Almojábanas",
+        summary: "Almojábanas colombianas de queso, doradas por fuera y suaves por dentro.",
+        prices: [{ value: "$3.000" }],
+        details: [{ label: "Ingredientes", value: "Preparación colombiana a base de queso." }],
+      },
+      {
+        id: "galletas-ciruela",
+        name: "Galletas de ciruela",
+        summary: "Galletas caseras a base de ciruela campechana, con un toque frutal y una textura crujiente.",
+        prices: [{ value: "$2.000" }],
+        details: [{ label: "Sabor", value: "Ciruela campechana." }],
+      },
+      {
+        id: "pudin-ciruela",
+        name: "Pudín de ciruela",
+        summary: "Pudín suave elaborado con ciruela campechana, de sabor frutal y textura delicada.",
+        prices: [{ value: "$5.000" }],
+        details: [{ label: "Sabor", value: "Ciruela campechana." }],
+      },
+      {
+        id: "pudin-cafe",
+        name: "Pudín de café",
+        summary: "Pudín aromático de café con uvas pasas, suave, húmedo y lleno de sabor casero.",
+        prices: [{ value: "$5.000" }],
+        details: [{ label: "Ingredientes", value: "Café y uvas pasas." }],
+      },
+      {
+        id: "mini-galletas-cafe",
+        name: "Mini galletas de café",
+        summary: "Pequeñas galletas horneadas con sabor a café, ideales para acompañar una bebida caliente.",
+        prices: [{ value: "$2.000" }],
+        details: [{ label: "Sabor", value: "Café." }],
+      },
+      {
+        id: "brownie",
+        name: "Brownie",
+        summary: "Brownie de chocolate con relleno de arequipe de chocolate, intenso, húmedo y cremoso.",
+        prices: [{ value: "$5.000" }],
+        details: [{ label: "Relleno", value: "Arequipe de chocolate." }],
+      },
+      {
+        id: "yucaditos",
+        name: "Yucaditos",
+        summary: "Palitos de yuca crocantes, dorados y ligeros, perfectos para compartir.",
+        prices: [{ value: "$4.000" }],
+        details: [{ label: "Textura", value: "Crocantes y dorados." }],
+      },
+      {
+        id: "perlas-yuca-queso",
+        name: "Perlas de yuca y queso",
+        summary: "Perlitas de almidón de yuca con queso, doradas por fuera y suaves en el centro.",
+        prices: [{ value: "$5.000" }],
+        details: [{ label: "Ingredientes", value: "Almidón de yuca y queso." }],
+      },
+      {
+        id: "pan-cafe",
+        name: "Pan de café",
+        summary: "Pan aromático de café con uvas pasas, de miga suave y sabor casero.",
+        prices: [{ value: "$5.000" }],
+        details: [{ label: "Ingredientes", value: "Café y uvas pasas." }],
+      },
+      {
+        id: "mani",
+        name: "Maní",
+        summary: "Maní garrapiñado con sabor a café, crujiente, dulce y aromático.",
+        prices: [{ value: "$3.000" }],
+        details: [{ label: "Sabor", value: "Maní garrapiñado con café." }],
+      },
+    ],
   },
 ];
 
@@ -373,7 +458,10 @@ const getCardImage = (card) => {
   const image = card?.querySelector("[data-image-frame] img");
   const source = image?.getAttribute("src")?.trim();
   if (!image || !source || image.hidden) return null;
-  return { src: source, alt: image.getAttribute("alt") || "" };
+  return {
+    src: image.dataset.modalSrc || image.currentSrc || source,
+    alt: image.getAttribute("alt") || "",
+  };
 };
 
 const openProduct = (productId, trigger) => {
@@ -422,12 +510,40 @@ const showCardFallback = (image) => {
   fallback.hidden = false;
 };
 
+const cardImageSizes = "(max-width: 599px) 31vw, (max-width: 899px) 45vw, 247px";
+const responsiveImageWidths = [360, 720];
+
+const enhanceImageWithWebp = (image) => {
+  const source = image.getAttribute("src")?.trim();
+  if (!source) return;
+
+  const sourceUrl = new URL(source, document.baseURI);
+  const sourcePath = sourceUrl.pathname;
+  const fileName = decodeURIComponent(sourcePath.slice(sourcePath.lastIndexOf("/") + 1));
+  const baseName = fileName.replace(/\.[^/.]+$/, "");
+  const webpDirectory = new URL("./assets/img/webp/", document.baseURI);
+  const picture = document.createElement("picture");
+  const webpSource = document.createElement("source");
+
+  webpSource.type = "image/webp";
+  webpSource.sizes = cardImageSizes;
+  webpSource.srcset = responsiveImageWidths
+    .map((width) => `${new URL(`${baseName}-${width}.webp`, webpDirectory).href} ${width}w`)
+    .join(", ");
+  image.dataset.modalSrc = new URL(`${baseName}-720.webp`, webpDirectory).href;
+  image.sizes = cardImageSizes;
+  picture.append(webpSource);
+  image.replaceWith(picture);
+  picture.append(image);
+};
+
 const initializeCardImage = (image) => {
   const frame = image.closest("[data-image-frame]");
   const fallback = frame?.querySelector("[data-fallback]");
   const source = image.getAttribute("src")?.trim();
   if (!frame || !fallback || !source) return;
 
+  enhanceImageWithWebp(image);
   image.hidden = false;
   fallback.hidden = true;
   image.addEventListener("error", () => showCardFallback(image));
